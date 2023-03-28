@@ -1,0 +1,43 @@
+pwd - For Checking Current dir
+cd - to Enter in a Dir
+ls - list of all available folders & files in the Dir
+git config --global user.name - Get Account name
+git config --global user.email - Get Account email
+git config --list
+rm -rf --<File name>-- = Use For Deleting Repo, or may Delete any file Folder
+git status
+git log
+git init
+git add --a Uses For Adding All Files In Staged 
+git add --<File Name>-- Uses For Adding A Particular File
+git commit -m --<Your Commit Title>--
+touch --<File Name You Want To Create>--
+git diff #Check Difference in Staging Area And Current Working Dir 
+git diff --staged #Check Difference in Staging Area And Last Commit 
+git add . 
+.gitignore structure 
+   1. file.txt, file.log -- This pattern ignore File Which is mentioned in This Area 
+   2. *.log, *.txt -- This pattern ignore File Which is Related to This Extensions 
+   3. dir/ -- This pattern ignore All Type folder and files in this folder 
+   4. /dir/ -- this pattern will ignore only This Dir not other dir in other folders 
+   NOTE- .gitignore Will Never Ignore empty folder
+
+git commit -a -m "Your Commit" => Skipping staging Area
+git rm --<your File Name>-- => Delete Your File And Add into Staging Area 
+git mv --<file name>-- --<renamed File Name> => Rename Your File And Add into The Staging Area
+git rm --cached --<file name>--
+git log --since -2.days
+git log --since -2.weeks
+git log --since -2.months
+git log -p 
+git log -p -3 
+git log --state 
+git log --pretty -full
+git log --pretty -oneline
+git log --pretty -short
+
+git restore --staged --<File Name>--
+git restore --source=<commit> <File Name>  # Restore a file to a specific commit
+git stash  # Temporarily save changes before restoring a file to a previous commit
+git checkout -f  # Discard all changes in the working directory and replace them with the latest commit on the current branch. Use with caution, as any uncommitted changes will be permanently lost.
+git checkout -- <File Name>  # Discard changes in the specified file and restore it to the last committed version
