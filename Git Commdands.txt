@@ -41,3 +41,6 @@ git restore --source=<commit> <File Name>  # Restore a file to a specific commit
 git stash  # Temporarily save changes before restoring a file to a previous commit
 git checkout -f  # Discard all changes in the working directory and replace them with the latest commit on the current branch. Use with caution, as any uncommitted changes will be permanently lost.
 git checkout -- <File Name>  # Discard changes in the specified file and restore it to the last committed version
+git remote add origin --<link>-- 
+git push origin master
+git config --global alias.st status
